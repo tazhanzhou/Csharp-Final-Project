@@ -1,0 +1,31 @@
+﻿<Window x:Class="MusicStore.EditMusic"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MusicStore"
+        mc:Ignorable="d"
+        Title="EditMusic" Height="370.815" Width="587.554">
+    <Grid Margin="0,0,2,-21">
+        <StackPanel HorizontalAlignment="Left" Height="31" Margin="0,70,0,0" VerticalAlignment="Top" Width="578" Orientation="Horizontal">
+            <Label Content="Song:"/>
+            <TextBox x:Name="tbName" TextWrapping="Wrap" Text="" Width="479"/>
+        </StackPanel>
+        <Label Content="Music Info" FontSize="20" FontWeight="Bold" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <StackPanel HorizontalAlignment="Left" Height="31" Margin="0,106,0,0" VerticalAlignment="Top" Width="578" Orientation="Horizontal">
+            <Label Content="Album:"/>
+            <TextBox x:Name="tbAlbum" TextWrapping="Wrap" Text="" Width="479"/>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="31" Margin="0,142,0,0" VerticalAlignment="Top" Width="578" Orientation="Horizontal">
+            <Label Content="Artist:"/>
+            <TextBox x:Name="tbArtist" TextWrapping="Wrap" Text="" Width="479"/>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="31" Margin="0,178,0,0" VerticalAlignment="Top" Width="578" Orientation="Horizontal">
+            <Label Content="Available:"/>
+            <TextBox x:Name="tbAvailable" TextWrapping="Wrap" Text="" Width="479"/>
+        </StackPanel>
+        <Button x:Name="btCancel" Click="btCancel_Click" Content="Cancel" HorizontalAlignment="Left" Margin="165,243,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="btSave" Click="btSave_Click" Content="Save" HorizontalAlignment="Left" Margin="307,243,0,0" VerticalAlignment="Top" Width="75"/>
+
+    </Grid>
+</Window>
